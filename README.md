@@ -1,6 +1,6 @@
 # Apolo 2021
 
-Movie App built with React Apolo and GraphQL
+WEB Application with a rest API, Movie App built with React Apolo and GraphQL
 Apollo is one of the best ways to consume GraphQL
 \*\* git remote add origin --> does
 
