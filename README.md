@@ -1,9 +1,7 @@
 # Apolo 2021
 
 Movie App built with React Apolo and GraphQL
-
-rest ap: url 로 가서 json을 받아옴 vs GraphQL: query 나 mutation 을 보냄
-Apollo is the best way to consume GraphQL
+Apollo is one of the best ways to consume GraphQL
 \*\* git remote add origin --> does
 
 1. create-react-app
