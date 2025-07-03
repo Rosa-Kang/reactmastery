@@ -1,0 +1,369 @@
+/* 기본 앱 스타일 */
+.coin-app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 검색 섹션 */
+.coin-search {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.coin-text {
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 2rem;
+  color: #f7fafc; /* 밝은 회색 */
+}
+
+.coin-input {
+  padding: 16px 24px;
+  font-size: 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.coin-input:focus {
+  border-color: #3182ce;
+}
+
+/* 코인 컨테이너 */
+.coin-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* 코인 행 - 데스크톱 */
+.coin-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #d7d7d7;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 16px;
+  transition: opacity 0.3s ease;
+}
+
+/* 데스크톱에서만 hover 효과 적용 */
+@media (hover: hover) and (pointer: fine) {
+  .coin-row:hover {
+    opacity: 0.7;
+  }
+}
+
+/* 코인 정보 섹션 */
+.coin {
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+.coin h1 {
+  font-size: 16px;
+  width: 150px;
+  margin: 0;
+  font-weight: 600;
+  color: #e2e8f0; /* 밝은 회색 */
+}
+
+.coin img {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+  color: #a0aec0; /* 밝은 회색 */
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+/* 코인 데이터 섹션 */
+.coin-data {
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.coin-price {
+  width: 110px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.coin-volume {
+  width: 155px;
+  color: #a0aec0;
+}
+
+.coin-marketcap {
+  width: 230px;
+  color: #a0aec0;
+}
+
+.coin-percent {
+  width: 100px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.red {
+  color: #e53e3e;
+}
+
+.green {
+  color: #38a169;
+}
+
+/* 태블릿 화면 (768px 이하) */
+@media screen and (max-width: 768px) {
+  .coin-app {
+    padding: 0 16px;
+  }
+  
+  .coin-text {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+  
+  .coin-search {
+    margin-bottom: 32px;
+  }
+  
+  .coin-input {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+  
+  .coin-row {
+    height: 70px;
+    padding: 0 12px;
+  }
+  
+  .coin {
+    min-width: 200px;
+    padding-right: 16px;
+  }
+  
+  .coin h1 {
+    font-size: 14px;
+    width: 120px;
+  }
+  
+  .coin img {
+    height: 25px;
+    width: 25px;
+    margin-right: 8px;
+  }
+  
+  .coin-symbol {
+    font-size: 12px;
+  }
+  
+  .coin-price {
+    width: 90px;
+    font-size: 14px;
+  }
+  
+  .coin-volume {
+    width: 100px;
+    font-size: 12px;
+  }
+  
+  .coin-marketcap {
+    width: 120px;
+    font-size: 12px;
+  }
+  
+  .coin-percent {
+    width: 80px;
+    font-size: 14px;
+  }
+}
+
+/* 모바일 화면 (480px 이하) */
+@media screen and (max-width: 480px) {
+  .coin-app {
+    padding: 0 12px;
+  }
+  
+  .coin-text {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .coin-search {
+    margin-bottom: 24px;
+  }
+  
+  .coin-input {
+    padding: 12px 16px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .coin-row {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 12px;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  
+  .coin {
+    width: 100%;
+    padding-right: 0;
+    padding-bottom: 12px;
+    min-width: auto;
+  }
+  
+  .coin h1 {
+    font-size: 16px;
+    width: auto;
+    margin-right: 8px;
+  }
+  
+  .coin img {
+    height: 28px;
+    width: 28px;
+    margin-right: 10px;
+  }
+  
+  .coin-symbol {
+    display: none;
+  }
+  
+  .coin-data {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    text-align: left;
+  }
+  
+  .coin-price {
+    width: auto;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .coin-volume {
+    width: auto;
+    font-size: 14px;
+  }
+  
+  .coin-marketcap {
+    width: auto;
+    font-size: 14px;
+  }
+  
+  .coin-percent {
+    width: auto;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+  }
+}
+
+/* 매우 작은 모바일 화면 (360px 이하) */
+@media screen and (max-width: 360px) {
+  .coin-app {
+    padding: 0 8px;
+  }
+  
+  .coin-text {
+    font-size: 1.125rem;
+  }
+  
+  .coin-row {
+    padding: 12px 8px;
+  }
+  
+  .coin h1 {
+    font-size: 14px;
+  }
+  
+  .coin img {
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+  }
+  
+  .coin-symbol {
+    font-size: 12px;
+  }
+  
+  .coin-data {
+    gap: 6px;
+  }
+  
+  .coin-price {
+    font-size: 14px;
+  }
+  
+  .coin-volume {
+    font-size: 12px;
+  }
+  
+  .coin-marketcap {
+    font-size: 12px;
+  }
+  
+  .coin-percent {
+    font-size: 14px;
+  }
+}
+
+/* 터치 디바이스에서 활성화 효과 */
+@media (hover: none) and (pointer: coarse) {
+  .coin-row:active {
+    opacity: 0.7;
+  }
+  
+  .coin-input {
+    font-size: 16px; /* iOS 확대 방지 */
+  }
+}
+
+/* 다크 모드 지원 (선택사항) */
+@media (prefers-color-scheme: dark) {
+  .coin-text {
+    color: #f7fafc;
+  }
+  
+  .coin h1 {
+    color: #e2e8f0;
+  }
+  
+  .coin-symbol {
+    color: #a0aec0;
+  }
+  
+  .coin-price {
+    color: #e2e8f0;
+  }
+  
+  .coin-volume {
+    color: #a0aec0;
+  }
+  
+  .coin-marketcap {
+    color: #a0aec0;
+  }
+}
