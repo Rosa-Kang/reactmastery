@@ -14,7 +14,7 @@ const Footer = () => {
           <h4>Links</h4>
           <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="https://docs.coingecko.com/reference/introduction" target='blank'>API</a></li>
+            <li><a href="https://www.coingecko.com/en/api" target='blank'>API</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
